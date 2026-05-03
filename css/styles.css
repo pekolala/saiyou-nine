@@ -278,6 +278,7 @@ ul {
     align-items: center;
     justify-content: flex-end; /* 右寄せ（縦書きのため） */
     padding-right: 15%;
+    padding-top: 60px; /* ヘッダーの高さを考慮 */
 }
 
 .hero-bg {
@@ -708,11 +709,13 @@ ul {
     .btn-entry-header { display: inline-block; }
     
     .hero {
-        padding-right: 20%;
+        padding-right: 15%; /* メニューとの重なりを避けるため少し右に寄せる */
+        padding-top: 100px; /* PCではヘッダーが少し高くなるため多めに確保 */
     }
     
     .hero-copy {
-        font-size: 4rem;
+        font-size: 3.2rem; /* 重なりを防ぐため少しサイズダウン */
+        line-height: 1.7; /* 行間を少し詰めて横幅を抑える */
     }
     
     .message-inner {
