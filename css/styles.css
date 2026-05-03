@@ -322,7 +322,7 @@ ul {
 }
 
 .hero-copy-line {
-    display: inline-block;
+    display: block;
     opacity: 0;
     animation: fadeUpIn 1.5s forwards;
 }
