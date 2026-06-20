@@ -38,6 +38,7 @@ body {
     letter-spacing: 0.05em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    word-break: auto-phrase; /* 日本語の文節での自動改行をサポート */
 }
 
 img {
@@ -777,3 +778,28 @@ ul {
         gap: 30px;
     }
 }
+
+/* ==========================================================================
+   Responsive Line Break Utilities
+   ========================================================================== */
+.inline-block {
+    display: inline-block;
+}
+
+.pc-only {
+    display: inline;
+}
+
+.sp-only {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .pc-only {
+        display: none !important;
+    }
+    .sp-only {
+        display: inline !important;
+    }
+}
+
